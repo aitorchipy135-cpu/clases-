@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-grey: #606060;
@@ -226,4 +226,142 @@ gap: var(--space-xs);
 
 .services__foot {
 
+}
+
+.projects {
+    padding: var(--space-xxl) var(--space-md);
+    background-color: var(--color-bg);
+}
+
+.projects__block{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.projects__head{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.projects__content{
+    display: flex;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.projects__card{
+display: flex;
+flex-direction: column;
+gap: var(--space-md);
+flex: 1 1 300px;
+
+}
+
+.projects__info{
+display: flex;
+flex-direction: column;
+gap: var(--space-xxs);
+}
+
+.projects__info .link {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.work {
+    padding: var(--space-xxl) var(--space-md);
+    background-color: var(--color-bg);
+}
+
+.work__block{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.work__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.work__cards{
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+   
+    
+}
+
+.work__cardsleft{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+     
+    
+}
+
+.work__card-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding: 32px;
+    background-color: var(--color-light-grey)
+}
+
+.work__cards-right {
+    display:flex;
+    gap: var(--space-xs);
+    flex-direction: column;
+    flex: 1 1 300px;
+
+}
+
+.work__card-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+
+    
+    
+
+}
+
+.work__card-right {
+    display: flex;
+    gap: var(--space-md);
+    padding: 32px;
+    background-color: var(--color-light-grey);
+    flex-grow: 1;
+}
+
+
+.contact{
+    padding: var(--space-xxl) var(--space-md);
+    background-color: var(--color-bg);
+}
+
+.contact__block {
+    display: flex;
+    background-color: var(--color-light-grey);
+    padding: var(--space-xl);
+    gap: var(--space-xl);
+    align-items: center;
+    
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+
+}
+.contact__bottom {
+display: flex;
+flex-direction: column;
+gap: var(--space-md);
 }
