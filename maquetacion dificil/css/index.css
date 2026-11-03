@@ -14,6 +14,10 @@
     --space-xl: 48px;
     --space-xxl: 64px;
 
+
+    /* Grid */
+    --grid-2col: repeat(auto-fit, minmax(340px, 1fr))
+
 }
 
 * {
@@ -351,6 +355,7 @@ gap: var(--space-xxs);
     padding: var(--space-xl);
     gap: var(--space-xl);
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -358,10 +363,58 @@ gap: var(--space-xxs);
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+    flex: 1 1 300px;
 
 }
 .contact__bottom {
-display: flex;
-flex-direction: column;
-gap: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+
+.trabajo {
+    padding: var(--space-xxl) var(--space-md);
+    background-color: var(--color-bg);
+}
+
+.trabajo__block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.trabajo__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-auto-rows: 1fr 1fr;
+    gap: 16px;
+    
+}
+
+.trabajo__card {
+    display: flex;
+    gap: var(--space-xs);
+    background-color: var(--color-light-grey);
+    padding: 32px;
+}
+
+.trabajo__card.feature {
+    grid-row: span 2;
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.trabajo__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    
+    
+}
+
+.trabajo__card.feature .trabajo__card-content {
+        padding: var(--space-lg);
 }
